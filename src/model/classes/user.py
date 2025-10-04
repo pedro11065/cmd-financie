@@ -11,7 +11,7 @@ class User:
         self.fullname : str = " "
         self.firstname : str = self.fullname.split(" ")[0]
         self.lastname :str = self.fullname.split(" ")[-1]
-        self.email : str 
+        self.login : str 
         self.password_hash : str 
 
         self.salary : float
@@ -25,13 +25,10 @@ class User:
 
         print("Criando usuário:\n")
         fullname = input("Nome completo: ")
-        email = input("Email: ")
+        login = input("Login: ")
         password = input("Senha:")
         salary = input("Salário atual: ")
         salary_day = input("Data de pagamento: ")
-
-        if self.verify.user(fullname=fullname,email=email,password=password,salary=salary,salary_day=salary_day)[0]:
-            None
 
 
             
