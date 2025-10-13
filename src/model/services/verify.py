@@ -47,7 +47,7 @@ class Verify:
                 if salary_day <= 31:
                     return True, ""
             except:
-                return False , "Data de pagam,ento inválida."
+                return False , "Data de pagamento inválida."
 
                     
 
